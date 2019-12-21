@@ -13,9 +13,10 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
+  <!-- Custom fonts-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
     type='text/css'>
@@ -41,16 +42,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#"><i class="fas fa-home"></i></a>
+            <a class="nav-link js-scroll-trigger" href="#home"><i class="fas fa-home"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Sobre mí</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about2">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -63,19 +64,20 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="masthead">
+  <!-- Header. Home Page -->
+  <header class="masthead" id="home">
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">Welcome To Our Studio!</div>
         <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="S4_T3.pdf"
+          download="CV_SGonzalezVelazquez">Descarga mi CV</a>
       </div>
     </div>
   </header>
 
-  <!-- Services -->
-  <section class="page-section" id="services">
+  <!-- Sobre mí -->
+  <section class="page-section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -115,101 +117,182 @@
     </div>
   </section>
 
-  <!-- Portfolio Grid -->
-  <section class="bg-light page-section" id="portfolio">
+  <!-- PORTFOLIO -->
+  <!-- Control buttons -->
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+    <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+    <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+    <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+  </div>
+
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <div class="container">
+    <div class="filterDiv cars">BMW</div>
+    <div class="filterDiv colors fruits">Orange</div>
+    <div class="filterDiv cars">Volvo</div>
+    <div class="filterDiv colors">Red</div>
+    <div class="filterDiv cars animals">Mustang</div>
+    <div class="filterDiv colors">Blue</div>
+    <div class="filterDiv animals">Cat</div>
+    <div class="filterDiv animals">Dog</div>
+    <div class="filterDiv fruits">Melon</div>
+    <div class="filterDiv fruits animals">Kiwi</div>
+    <div class="filterDiv fruits">Banana</div>
+    <div class="filterDiv fruits">Lemon</div>
+    <div class="filterDiv animals">Cow</div>
+  </div>
+  <section class="flex bg-light page-section" id="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">"El denominador común para el éxito es el trabajo"</h3>
         </div>
       </div>
+
+      <!-- Control buttons -->
+      <div class="row pb-3" id="portfolioSelector">
+        <button class="btn active" onclick="filterSelection('all')">Todos</button>
+        <button class="btn" onclick="filterSelection('movil')"> App móvil</button>
+        <button class="btn" onclick="filterSelection('web')">Desarrollo Web</button>
+        <button class="btn" onclick="filterSelection('escritorio')"> Escritorio</button>
+      </div>
+
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+        <div class="col-lg-4 col-sm-6 mb-4 portfolio-item cars">
+          <div class="card h-100">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
               </div>
+              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Landmark Finder</a>
+              </h4>
+              <p class="card-date">DICIEMBRE, 2019</p>
+              <hr class="divider">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum
+                quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum
+                tempora ex quae? Nihil, dolorem!</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Threads</h4>
-            <p class="text-muted">Illustration</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+        <div class="col-lg-4 col-sm-6 mb-4 portfolio-item animals">
+          <div class="card h-100">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
               </div>
+              <img class="img-fluid" src="img/portfolio/elm_calculator1.png" alt="">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">ELM Calculator</a>
+              </h4>
+              <p class="card-date">Julio, 2019</p>
+              <hr class="divider">
+              <p class="card-text">Aplicación web desarrollada con la programación funcional de
+                ELM para simular el funcionamiento de una simple calculadora.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Explore</h4>
-            <p class="text-muted">Graphic Design</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+        <div class="col-lg-4 col-sm-6 mb-4 portfolio-item animals">
+          <div class="card h-100">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
               </div>
+              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Food Finder</a>
+              </h4>
+              <p class="card-date">Junio, 2019</p>
+              <hr class="divider">
+              <p class="card-text">Aplicación de gestión de pedidos y reparto de comida a domicilio.
+                Desarrollo realizado empleando la programación Orientada a Widgets de Flutter y la
+                programación Orientada a Objetos de Dart.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+        <div class="col-lg-4 col-sm-6 mb-4 portfolio-item fruits">
+          <div class="card h-100">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
               </div>
+              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Calculadora RCV</a>
+              </h4>
+              <p class="card-date">Mayo, 2019</p>
+              <hr class="divider">
+              <p class="card-text">Prototipo de una aplicación móvil para detectar el riesgo de enfermedad cardiovascular 
+                basándose en el algoritmo de Framingham</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+        <div class="col-lg-4 col-sm-6 mb-4 portfolio-item colors">
+          <div class="card h-100">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
               </div>
+              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Personal Website</a>
+              </h4>
+              <p class="card-date">Diciembre, 2019</p>
+              <hr class="divider">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum
+                quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum
+                tempora ex quae? Nihil, dolorem!</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+        <div class="col-lg-4 col-sm-6 mb-4 portfolio-item">
+          <div class="card h-100">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
               </div>
+              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Youtube Audio Downloader</a>
+              </h4>
+              <p class="card-date">enero, 2019</p>
+              <hr class="divider">
+              <p class="card-text">Sistema cliente-servidor que permite la extracción de ficheros de audio a partir
+                de la URL de clips de youtube. Trabajo de prácticas para la asignatura Sistemas Distribuidos. </p>
             </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
           </div>
         </div>
       </div>
+    </div>
+    <!-- /.row -->
     </div>
   </section>
 
@@ -227,7 +310,7 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/berenguela.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -243,7 +326,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/cambrian.png" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/uclm.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -259,11 +342,11 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/cambrian.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>December 2012</h4>
+                  <h4>Julio 2019</h4>
                   <h4 class="subheading">Transition to Full Service</h4>
                 </div>
                 <div class="timeline-body">
@@ -489,7 +572,7 @@
       </div>
       <div class="row">
         <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+          <i class="fas fa-map-marker-alt fa-3x mb-3 text-muted"></i>
           <a class="d-block" href="http://maps.google.com/?q=Ciudad Real, España" target="_blank">Ciudad Real,
             España</a>
         </div>
@@ -761,9 +844,11 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+  <!-- Portfolio filtering -->
+  <script src="js/portfolioFilter.js"></script>
+
   <!-- Contact form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
