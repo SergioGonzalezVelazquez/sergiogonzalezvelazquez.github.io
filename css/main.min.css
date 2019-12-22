@@ -3,9 +3,15 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
+
+:root {
+    --main-color: #fed136;
+}
+
+
 body {
     overflow-x: hidden;
-    font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
 p {
@@ -13,15 +19,15 @@ p {
 }
 
 a {
-    color: #fed136
+    color: var(--main-color);
 }
 
 a:hover {
-    color: #fec503
+    color: var(--main-color);
 }
 
 .text-primary {
-    color: #fed136 !important
+    color: var(--main-color) !important;
 }
 
 h1,
@@ -35,7 +41,8 @@ h6 {
 }
 
 .page-section {
-    padding: 100px 0
+    padding-top: 40px;
+    padding-bottom: 100px;
 }
 
 .page-section h2.section-heading {
@@ -60,12 +67,12 @@ h6 {
 }
 
 ::-moz-selection {
-    background: #fed136;
+    background: var(--main-color);
     text-shadow: none
 }
 
 ::selection {
-    background: #fed136;
+    background: var(--main-color);
     text-shadow: none
 }
 
@@ -92,8 +99,8 @@ img::-moz-selection {
 }
 
 .btn-primary {
-    background-color: #fed136;
-    border-color: #fed136
+    background-color: var(--main-color);
+    border-color: var(--main-color);
 }
 
 .btn-primary:active,
@@ -120,20 +127,21 @@ img::-moz-selection {
     text-transform: uppercase;
     color: #fff;
     border: 0;
-    background-color: #fed136;
+    background-color: var(--main-color);
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
 #mainNav .navbar-brand {
-    color: #fed136;
-    font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+    color: var(--main-color);
+    font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1rem;
 }
 
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #fec503
+    color: var(--main-color);
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -147,7 +155,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fed136
+    color: var(--main-color);
 }
 
 @media (min-width:992px) {
@@ -184,7 +192,7 @@ img::-moz-selection {
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
-        color: #fed136;
+        color: var(--main-color);
     }
 
 }
@@ -263,15 +271,15 @@ img::-moz-selection {
 }
 
 .string-highlight {
-    color: rgba(253, 149, 90, 0.8);
+    color: var(--main-color);
     font-weight: bold;
 }
 
-.string-type1tab{
+.string-type1tab {
     padding-left: 2em;
 }
 
-.string-type2tab{
+.string-type2tab {
     padding-left: 4em;
 }
 
@@ -378,10 +386,127 @@ header.masthead .intro-text .intro-heading {
     }
 }
 
-.service-heading {
-    margin: 15px 0;
-    text-transform: none
+
+/*--------------------------------------------------------
+    Sobre mí
+-----------------------------------------------------------*/
+#about ul.about-info {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
+
+#about ul.about-info li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#about ul.about-info li span {
+    width: calc(100% - 130px);
+}
+
+#about ul.about-info li span:first-child {
+    font-weight: 600;
+    color: #000000;
+    width: 130px;
+}
+
+
+/*--------------------------------------------------------
+    Formación
+-----------------------------------------------------------*/
+.page .heading {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #3e64ff;
+}
+
+.resume-wrap {
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.resume-wrap .icon {
+    width: 50px;
+    height: 50px;
+    background: #3e64ff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.resume-wrap .icon span {
+    color: #fff;
+    font-size: 28px;
+}
+
+.resume-wrap .text {
+    width: calc(100% - 50px);
+}
+
+.resume-wrap .date {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    color: #3e64ff;
+}
+
+.resume-wrap h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.resume-wrap .position {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+#navi {
+    top: 180px;
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 0;
+}
+
+#navi ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navi li {
+    font-weight: 700;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#navi li a {
+    color: #1B242F;
+}
+
+#navi li a.current {
+    color: var(--main-color);
+    margin-left: 20px;
+    position: relative;
+}
+
+#navi li a.current:after {
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    width: 20px;
+    height: 2px;
+    content: '';
+    transform: translateY(-50%);
+    background: var(--main-color);
+}
+
+
 
 /*--------------------------------------------------------
     Portfolio
@@ -419,7 +544,7 @@ header.masthead .intro-text .intro-heading {
 
 /* Add a  background to the active button */
 #portfolio .btn.active {
-    background-color: #fed136;
+    background-color: var(--main-color);
     color: white;
 }
 
@@ -433,7 +558,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 #portfolio .card-title a:hover {
-    color: #fed136;
+    color: var(--main-color);
 }
 
 #portfolio .card-date {
@@ -444,7 +569,7 @@ header.masthead .intro-text .intro-heading {
 #portfolio hr.divider {
     width: 25%;
     border-width: .2rem;
-    border-color: #fed136;
+    border-color: var(--main-color);
     margin-left: 0;
 }
 
@@ -580,7 +705,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .btn-git:hover {
-    background-color: #fed136;
+    background-color: var(--main-color);
     color: white;
 }
 
@@ -592,7 +717,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .btn-close:hover {
-    color: #fed136;
+    color: var(--main-color);
 }
 
 .portfolio-modal .close-modal {
@@ -631,6 +756,7 @@ header.masthead .intro-text .intro-heading {
 /*--------------------------------------------------------
     Timeline
 -----------------------------------------------------------*/
+
 .timeline {
     position: relative;
     padding: 0;
@@ -690,8 +816,8 @@ header.masthead .intro-text .intro-heading {
     position: absolute;
     z-index: 100;
     left: 0;
-    width: 100px;
-    height: 1000px;
+    width: 80px;
+    height: 80px;
     margin-left: 0;
     text-align: center;
     color: #fff;
@@ -699,6 +825,20 @@ header.masthead .intro-text .intro-heading {
     border-radius: 100%;
     background-color: #fed136
 }
+
+.timeline .timeline-heading > div h3 {
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    background: #e6e6e6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+  }
 
 .timeline>li .timeline-image h4 {
     font-size: 10px;
@@ -730,7 +870,7 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 0
 }
 
-.timeline .timeline-heading h4 {
+.timeline .timeline-heading h3 {
     margin-top: 0;
     color: inherit
 }
@@ -768,7 +908,7 @@ header.masthead .intro-text .intro-heading {
         margin-left: -50px
     }
 
-    .timeline>li .timeline-image h4 {
+    .timeline>li .timeline-image h3 {
         font-size: 13px;
         line-height: 18px;
         margin-top: 16px
@@ -796,7 +936,7 @@ header.masthead .intro-text .intro-heading {
         margin-left: -75px
     }
 
-    .timeline>li .timeline-image h4 {
+    .timeline>li .timeline-image h3 {
         font-size: 18px;
         line-height: 26px;
         margin-top: 30px
@@ -822,7 +962,7 @@ header.masthead .intro-text .intro-heading {
         margin-left: -85px
     }
 
-    .timeline>li .timeline-image h4 {
+    .timeline>li .timeline-image h3 {
         margin-top: 40px
     }
 
@@ -862,7 +1002,11 @@ section#contact {
 section#contact hr.divider {
     max-width: 3.25rem;
     border-width: .2rem;
-    border-color: #fed136;
+    border-color: var(--main-color);
+}
+
+section#contact a {
+    color: white;
 }
 
 section#contact .section-heading {
@@ -887,7 +1031,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: var(--main-color);
     box-shadow: none
 }
 
@@ -980,5 +1124,5 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #fed136
+    background-color: var(--main-color);
 }
