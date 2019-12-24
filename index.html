@@ -24,6 +24,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/main.min.css" rel="stylesheet">
+  <link href="css/progressBar.css" rel="stylesheet">
 
 </head>
 
@@ -101,7 +102,7 @@
       </div>
     </div>
 
-    <img src="img/fotoPerfil.png" alt="Image" class="img-face" data-aos="fade">
+    <img src="img/sergio.png" alt="Image" class="img-face" data-aos="fade">
   </header>
 
   <!-- Sobre mí -->
@@ -163,38 +164,39 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-12 col-md-offset-0">
+        <div class="col-md-9 col-md-offset-0">
           <div id="page-2" class="page two">
             <ul class="timeline">
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/cambrian.png" alt="Cambrian Intelligence">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3 class="timeline-title">Beca Desarrollador Full Stack</h3>
-                    <span class="company">Cambrian Intelligence - Julio 2019 - actualidad</span>
+                    <span class="timeline-company">Cambrian Intelligence - Julio 2019 - actualidad</span>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum
-                      eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt
-                      et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted"> Diseño y desarrollo de plataformas (back end) e interfaces de usuario web,
+                      orientados a la recopilación de datos, análisis y visualización de los mismos.
+                    </p>
+                    <p class="text-muted">La naturaleza de los datos procesados por estas plataformas es en el ámbito de
+                      la salud.</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/uclm.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3 class="timeline-title">Grado en Ingeniería Informática</h3>
-                    <span class="company">Universidad de Castilla La Mancha - 2016 - 2020</span>
+                    <span class="timeline-company">Universidad de Castilla La Mancha - 2016 - 2020</span>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum
-                      eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt
-                      et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Intensificación en Tecnologías de la Información</p>
+                    <p class="text-muted">Nota media 8.80</p>
                   </div>
                 </div>
               </li>
@@ -205,12 +207,11 @@
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3 class="timeline-title">Bachillerato Tecnológico</h3>
-                    <span class="company">IES Berenguela de Castilla - 2014 - 2016</span>
+                    <span class="timeline-company">IES Berenguela de Castilla - 2014 - 2016</span>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum
-                      eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt
-                      et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Mención de "Matrícula de Honor"</p>
+                    <p class="text-muted">Nota media: 9.00</p>
                   </div>
                 </div>
               </li>
@@ -237,6 +238,403 @@
           <h3 class="section-subheading text-muted">"El denominador común para el éxito es el trabajo"</h3>
         </div>
       </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <h4 class="text-center">Lenguajes de programación</h4>
+          <ul class="skills-bar-container px-0">
+
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Python</h5>
+                    <img class="img-fluid" src="img/technologies/python.png" alt="python">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="python-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressred" id="progress-python"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Typescript</h5>
+                    <img class="img-fluid" src="img/technologies/typescript.png" alt="typescript">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="typescript-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-typescript"></span>
+              </div>
+            </li>
+
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Java</h5>
+                    <img class="img-fluid" src="img/technologies/java.png" alt="java">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="java-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progresspurple" id="progress-java"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>JavaScript</h5>
+                    <img class="img-fluid" src="img/technologies/javascript.png" alt="javascript">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="javascript-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progresspurple" id="progress-javascript"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Dart</h5>
+                    <img class="img-fluid" src="img/technologies/dart.png" alt="dart">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="dart-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressorange" id="progress-dart"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="text-center">Desarrollo móvil</h4>
+          <ul class="skills-bar-container px-0">
+
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Flutter</h5>
+                    <img class="img-fluid" src="img/technologies/flutter.png" alt="flutter">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="flutter-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressred" id="progress-flutter"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Android Studio</h5>
+                    <img class="img-fluid" src="img/technologies/android.png" alt="android">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="android-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-android"></span>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-lg-4">
+          <h4 class="text-center">Desarrollo web</h4>
+          <ul class="skills-bar-container px-0">
+
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>HTML5</h5>
+                    <img class="img-fluid" src="img/technologies/html.png" alt="html">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="html-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressred" id="progress-html"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>CSS</h5>
+                    <img class="img-fluid" src="img/technologies/css.png" alt="css">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="css-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-css"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Elm</h5>
+                    <img class="img-fluid" src="img/technologies/elm.png" alt="elm">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="elm-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-elm"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>NestJS</h5>
+                    <img class="img-fluid" src="img/technologies/nestjs.png" alt="nestjs">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="nestjs-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-nestjs"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Prestashop</h5>
+                    <img class="img-fluid" src="img/technologies/prestashop.png" alt="prestashop">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="prestashop-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-prestashop"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Spring</h5>
+                    <img class="img-fluid" src="img/technologies/spring.png" alt="spring">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="spring-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-spring"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row  mt-5">
+        <div class="col-lg-4">
+          <h4 class="text-center">Bases de datos</h4>
+          <ul class="skills-bar-container px-0">
+
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>MySQL</h5>
+                    <img class="img-fluid" src="img/technologies/mysql.png" alt="mysql">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="mysql-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressred" id="progress-mysql"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>PostgreSQL</h5>
+                    <img class="img-fluid" src="img/technologies/postgresql.png" alt="postgresql">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="postgresql-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-postgresql"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Neo4J</h5>
+                    <img class="img-fluid" src="img/technologies/neo4j.png" alt="neo4j">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="neo4j-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-neo4j"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="text-center">Otros</h4>
+          <ul class="skills-bar-container px-0">
+
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Linux</h5>
+                    <img class="img-fluid" src="img/technologies/linux.png" alt="linux">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="linux-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressred" id="progress-linux"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>GraphQL</h5>
+                    <img class="img-fluid" src="img/technologies/graphql.png" alt="graphql">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="graphql-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-graphql"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Firebase</h5>
+                    <img class="img-fluid" src="img/technologies/firebase.png" alt="firebase">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="firebase-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-firebase"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Latex</h5>
+                    <img class="img-fluid" src="img/technologies/latex.png" alt="latex">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="latex-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressred" id="progress-latex"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="text-center">Idiomas</h4>
+          <ul class="skills-bar-container px-0">
+
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Español</h5>
+                    <img class="img-fluid" src="img/technologies/lengua-espanola.png" alt="espanol">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="espanol-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressred" id="progress-espanol"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <div class="row">
+                  <div class="col-9">
+                    <h5>Inglés</h5>
+                    <img class="img-fluid" src="img/technologies/lengua-inglesa.png" alt="ingles">
+                  </div>
+                  <div class="col-3">
+                    <span class="percent" id="ingles-pourcent"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar progressblue" id="progress-ingles"></span>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
   <!-- PORTFOLIO -->
@@ -772,6 +1170,7 @@
 
   <script src="js/main.js"></script>
   <script src="js/timeline.js"></script>
+  <script src="js/skillsProgressBar.js"></script>
 
 </body>
 

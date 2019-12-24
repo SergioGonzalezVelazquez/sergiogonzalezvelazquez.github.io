@@ -5,7 +5,8 @@
  */
 
 :root {
-    --main-color: #fed136;
+    /*--main-color: #fed136;*/
+    --main-color: #f708c1;
 }
 
 
@@ -37,7 +38,7 @@ h4,
 h5,
 h6 {
     font-weight: 700;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
 .page-section {
@@ -506,6 +507,9 @@ header.masthead .intro-text .intro-heading {
     background: var(--main-color);
 }
 
+/*--------------------------------------------------------
+    Skills
+-----------------------------------------------------------*/
 
 
 /*--------------------------------------------------------
@@ -763,6 +767,14 @@ header.masthead .intro-text .intro-heading {
     list-style: none
 }
 
+.timeline-company {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #8c8b8b;
+}
+
 .timeline:before {
     position: absolute;
     top: 0;
@@ -886,7 +898,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width:768px) {
     .timeline:before {
-        left: 50%
+        left: 30%
     }
 
     .timeline>li {
@@ -896,13 +908,13 @@ header.masthead .intro-text .intro-heading {
 
     .timeline>li .timeline-panel {
         float: left;
-        width: 41%;
+        width: 51%;
         padding: 0 20px 20px 30px;
         text-align: right
     }
 
     .timeline>li .timeline-image {
-        left: 50%;
+        left: 30%;
         width: 100px;
         height: 100px;
         margin-left: -50px
@@ -967,7 +979,7 @@ header.masthead .intro-text .intro-heading {
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
-        padding: 0 100px 20px 20px
+        padding: 0;
     }
 }
 
