@@ -100,22 +100,69 @@ img::-moz-selection {
 }
 
 .btn-primary {
-    background-color: var(--main-color);
-    border-color: var(--main-color);
+    background-color: #212529;
+    border-color: #212529;
 }
 
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
-    background-color: #fec810 !important;
-    border-color: #fec810 !important;
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
     color: #fff
 }
 
 .btn-primary:active,
 .btn-primary:focus {
-    box-shadow: 0 0 0 .2rem rgba(254, 209, 55, .5) !important
+    box-shadow: 0 0 0 .2rem rgba(247, 8, 193, .5) !important
 }
+
+.rounded-social-buttons {
+    text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+/*https://foundation.zurb.com/building-blocks/blocks/rounded-social-buttons.html*/
+
+
+.rounded-social-buttons .social-button {
+    background: #000000;
+}
+
+
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
+    color: #000000;
+    background: #fefefe;
+    border-color: #000000;
+}
+
 
 #mainNav {
     background-color: #212529
@@ -374,6 +421,25 @@ img::-moz-selection {
 
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    #typewriter {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #typewriter {
+        font-size: 1.4em;
+    }
+}
+
+/*Galaxy S5*/
+@media screen and (max-width: 767px) {
+    #typewriter {
+        font-size: 0.7em;
     }
 }
 
@@ -647,7 +713,7 @@ header.masthead .intro-text .intro-heading {
     height: 100%;
     transition: all ease .5s;
     opacity: 0;
-    background: rgba(254, 209, 54, .9)
+    background: rgba(247, 8, 193, .9)
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -1207,6 +1273,10 @@ section#contact hr.divider {
 
 section#contact a {
     color: white;
+}
+
+section#contact a:hover {
+    color: var(--main-color);
 }
 
 section#contact .section-heading {
