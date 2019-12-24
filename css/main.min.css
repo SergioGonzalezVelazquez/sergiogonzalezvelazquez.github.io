@@ -781,6 +781,21 @@ header.masthead .intro-text .intro-heading {
 .portfolio-modal .modal-dialog {
     margin: auto;
     max-width: 40vw;
+    background-color: rebeccapurple;
+}
+
+
+@media screen and (max-width: 991px) {
+    .portfolio-modal .modal-dialog {
+        max-width: 100%;
+    }
+}
+
+/*Galaxy S5*/
+@media screen and (max-width: 767px) {
+    .portfolio-modal .modal-dialog {
+        max-width: 100%;
+    }
 }
 
 .portfolio-modal .carousel {
