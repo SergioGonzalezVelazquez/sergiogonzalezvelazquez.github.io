@@ -66,10 +66,6 @@ h6 {
     text-shadow: none
 }
 
-::selection {
-    background: var(--main-color);
-    text-shadow: none
-}
 
 img::-moz-selection {
     background: 0 0
@@ -523,6 +519,13 @@ header.masthead .intro-text .intro-heading {
     width: 130px;
 }
 
+#about .firma {
+    text-align: center;
+}
+#about .firma img{
+    width: 8em;
+    height: auto;
+}
 
 /*--------------------------------------------------------
     Formación
@@ -845,9 +848,19 @@ header.masthead .intro-text .intro-heading {
     background: rgba(247, 8, 193, .9)
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#portfolio .portfolio-item:hover .portfolio-link .portfolio-hover {
     opacity: 1
 }
+
+#portfolio .portfolio-item:hover .card-body .card-title{
+    color: var(--main-color);
+    text-decoration: none;
+}
+#portfolio .portfolio-item .card-body .card-title a:hover{
+    color: var(--main-color);
+    text-decoration: none;
+}
+
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     font-size: 20px;
