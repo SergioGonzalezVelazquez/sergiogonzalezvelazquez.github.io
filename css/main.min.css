@@ -990,6 +990,9 @@ header.masthead .intro-text .intro-heading {
     .portfolio-modal .modal-content img {
         height: 450px;
     }
+    .portfolio-modal .modal-content video {
+        height: 450px;
+    }
 }
 
 .portfolio-modal .btn-git {
