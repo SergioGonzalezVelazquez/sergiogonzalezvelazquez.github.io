@@ -1414,6 +1414,7 @@ header.masthead .intro-text .intro-heading {
 @media screen and (max-width: 767px) {
     .container-horizontal ul.timeline-horizontal {
         display: block;
+        padding-top: 0px;
     }
 
     .container-horizontal ul.timeline-horizontal>li {
