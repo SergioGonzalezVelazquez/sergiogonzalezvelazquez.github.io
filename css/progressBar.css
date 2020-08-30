@@ -14,6 +14,7 @@
     --nestjs: 80%;
     --prestashop: 80%;
     --spring: 40%;
+    --rails: 30%;
 
     --mysql: 90%;
     --postgresql: 70%;
@@ -211,6 +212,13 @@
 .skills-bar-container li .bar-container #progress-spring {
     -webkit-animation-name: progress-spring;
     animation-name: progress-spring;
+    -webkit-animation-delay: 4.2s;
+    animation-delay: 4.2s;
+}
+
+.skills-bar-container li .bar-container #progress-rails {
+    -webkit-animation-name: progress-rails;
+    animation-name: progress-rails;
     -webkit-animation-delay: 4.2s;
     animation-delay: 4.2s;
 }
@@ -708,6 +716,39 @@
 
     100% {
         width: var(--spring);
+    }
+}
+
+/*--------------------------------------------------------
+    rails
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-rails {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--rails);
+    }
+}
+
+@-moz-keyframes progress-rails {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--rails);
+    }
+}
+
+@keyframes progress-rails {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--rails);
     }
 }
 
