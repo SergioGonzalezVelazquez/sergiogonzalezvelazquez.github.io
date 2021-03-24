@@ -1,6 +1,6 @@
 # Página web personal
 >Página web personal en la que describo mi formación y habilidades, adjunto mi curriculum y proporciono información de contacto.
->Puede visitarse en http://sergiogonzalezvelazquez.github.io/
+>Puede visitarse en http://serglezv.com/
 
 <p align="center">
 <img src="img/portfolio/personal-website.jpg" width="100%">

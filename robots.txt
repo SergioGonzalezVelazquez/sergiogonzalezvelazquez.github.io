@@ -1,4 +1,4 @@
-Sitemap: https://sergiogonzalezvelazquez.github.io/sitemap.xml
+Sitemap: https://serglezv.com/sitemap.xml
 
 User-agent: *
 Disallow: /css/
